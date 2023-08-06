@@ -1,0 +1,156 @@
+{
+  "id": "4173028",
+  "name": "demo",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1190",
+      "name": "管理",
+      "font_class": "guanli",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "146915",
+      "name": "红包",
+      "font_class": "hongbao",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "508240",
+      "name": "采购",
+      "font_class": "caigou",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "1112498",
+      "name": "我的费用-01",
+      "font_class": "wodefeiyong01",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "1605779",
+      "name": "个人",
+      "font_class": "my",
+      "unicode": "e6ed",
+      "unicode_decimal": 59117
+    },
+    {
+      "icon_id": "1876362",
+      "name": "CRM",
+      "font_class": "CRM",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "2571124",
+      "name": "电脑",
+      "font_class": "diannao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2668356",
+      "name": "文件",
+      "font_class": "wenjian",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "3267390",
+      "name": "灯泡",
+      "font_class": "dengpao",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "4933375",
+      "name": "人物-人",
+      "font_class": "renwu-ren",
+      "unicode": "e749",
+      "unicode_decimal": 59209
+    },
+    {
+      "icon_id": "9032475",
+      "name": "资产管理",
+      "font_class": "zichanguanli",
+      "unicode": "e643",
+      "unicode_decimal": 58947
+    },
+    {
+      "icon_id": "10283801",
+      "name": "操作日志",
+      "font_class": "changyongtubiao_caozuorizhifuben",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "11121359",
+      "name": "应用",
+      "font_class": "yingyong",
+      "unicode": "e626",
+      "unicode_decimal": 58918
+    },
+    {
+      "icon_id": "11465019",
+      "name": "人事数据",
+      "font_class": "renshishuju",
+      "unicode": "e64d",
+      "unicode_decimal": 58957
+    },
+    {
+      "icon_id": "13753015",
+      "name": "笔记本",
+      "font_class": "bijiben",
+      "unicode": "e60f",
+      "unicode_decimal": 58895
+    },
+    {
+      "icon_id": "15395432",
+      "name": "常用批示管理",
+      "font_class": "changyongpishiguanli",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "16372262",
+      "name": "公文收文",
+      "font_class": "gongwenshouwen",
+      "unicode": "e651",
+      "unicode_decimal": 58961
+    },
+    {
+      "icon_id": "18165448",
+      "name": "档案,档案袋",
+      "font_class": "record-full",
+      "unicode": "e890",
+      "unicode_decimal": 59536
+    },
+    {
+      "icon_id": "21587796",
+      "name": " 图层",
+      "font_class": "tuceng",
+      "unicode": "e619",
+      "unicode_decimal": 58905
+    },
+    {
+      "icon_id": "24161199",
+      "name": "档案管理-档案移交",
+      "font_class": "danganguanli-danganyijiao",
+      "unicode": "e62f",
+      "unicode_decimal": 58927
+    },
+    {
+      "icon_id": "35505231",
+      "name": "盖章",
+      "font_class": "gaizhang",
+      "unicode": "e67b",
+      "unicode_decimal": 59003
+    }
+  ]
+}
