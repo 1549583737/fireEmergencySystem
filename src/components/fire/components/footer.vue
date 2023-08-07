@@ -43,18 +43,19 @@ export default {
   width: 100%;
   display: flex;
   justify-content: center;
-  height: 119px;
+  // height: 119px;
   background-image: linear-gradient(180deg, #00121f00 0%, #000407 100%);
   .footer-container {
-    width: 50%;
+    background: url("../assets/bottomBcg.png") no-repeat bottom;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding-bottom: 20px;
     .footer-item {
       margin: 0 10px;
-
       font-family: PingFangSC-Regular;
       font-weight: 400;
-      font-size: 12px;
+      font-size: 14px;
       color: #c8dfff;
       letter-spacing: 0;
       text-align: center;

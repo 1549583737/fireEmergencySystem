@@ -38,7 +38,23 @@ export default {
   .inspect-container {
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
+    height: calc(100% - 35px);
+    overflow-y: auto;
+    &::-webkit-scrollbar {
+      height: 5px;
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+      border-radius: 8px; /*滚动条的圆角*/
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: rgb(0, 195, 255, 0.5);
+      border-radius: 8px; /*滚动条的圆角*/
+    }
+    &::-webkit-scrollbar-thumb:hover {
+      background-color: #409eff;
+    }
     .inspect-item {
       position: relative;
       width: 33%;
@@ -50,7 +66,7 @@ export default {
         font-family: DIN-Bold;
         font-weight: 700;
         color: #00d4f7;
-        font-size: 22px;
+        font-size: 30px;
         // position: relative;
         position: absolute;
         top: 5px;
@@ -58,7 +74,7 @@ export default {
         transform: translateX(-50%);
       }
       .inspectBcg {
-        height: 35px;
+        height: 40px;
         background: url("../../assets/inspectBcg.png") no-repeat center;
         background-size: contain;
       }

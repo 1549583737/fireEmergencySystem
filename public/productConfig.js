@@ -22,17 +22,17 @@ const productConfig = {
         {
           troops: "一中队",
           responser: "王二",
-          matters: "值班事项",
+          matters: "值班事项1",
         },
         {
           troops: "二中队",
           responser: "张三",
-          matters: "值班事项",
+          matters: "值班事项2",
         },
         {
           troops: "三中队",
           responser: "李四",
-          matters: "值班事项",
+          matters: "值班事项3",
         },
       ],
     },
@@ -284,6 +284,18 @@ const productConfig = {
         },
         {
           fireDoorName: "3号平台门",
+          fireDoorStatus: "开启",
+        },
+        {
+          fireDoorName: "4号平台门",
+          fireDoorStatus: "关闭",
+        },
+        {
+          fireDoorName: "5号平台门",
+          fireDoorStatus: "开启",
+        },
+        {
+          fireDoorName: "6号平台门",
           fireDoorStatus: "开启",
         },
       ],

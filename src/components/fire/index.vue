@@ -1,12 +1,18 @@
 <template>
   <div class="fireEmergencySystem">
     <div class="header">
-      <Header class="headerComp" />
+      <Header class="headerComp" :productConfig="productConfig" />
     </div>
     <div class="content">
       <Left class="left" :productConfig="productConfig" />
       <Right class="right" :productConfig="productConfig" />
       <Footer class="footer" :productConfig="productConfig" />
+      <div class="markIcon">
+        <div class="gasIcon1 icon"></div>
+        <div class="gasIcon2 icon"></div>
+        <div class="fireIcon1 icon"></div>
+        <div class="fireIcon2 icon"></div>
+      </div>
     </div>
     <!-- <div class="footer"></div> -->
   </div>
@@ -77,7 +83,33 @@ export default {
       bottom: 1px;
       left: 50%;
       transform: translateX(-50%);
-      flex-direction: columns;
+    }
+    .markIcon {
+      .icon {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+      }
+      .gasIcon1 {
+        top: 30%;
+        left: 30%;
+        background: url("./assets/gasIcon.png");
+      }
+      .gasIcon2 {
+        top: 50%;
+        left: 40%;
+        background: url("./assets/gasIcon.png");
+      }
+      .fireIcon1 {
+        top: 40%;
+        left: 50%;
+        background: url("./assets/fireIcon.png");
+      }
+      .fireIcon2 {
+        top: 60%;
+        left: 60%;
+        background: url("./assets/fireIcon.png");
+      }
     }
   }
 }

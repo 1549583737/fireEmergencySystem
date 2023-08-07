@@ -13,7 +13,7 @@ export default {};
 </script>
 <style lang="scss" scoped>
 .box {
-  background: rgba(9, 39, 73, 0.9);
+  background: rgba(9, 39, 73, 0.65);
   border: 1px solid rgba(38, 219, 255, 0.3);
   box-shadow: inset 0 0 20px 0 rgba(77, 136, 255, 0.3);
   padding: 10px;

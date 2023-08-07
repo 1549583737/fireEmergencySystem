@@ -14,6 +14,68 @@
         show-overflow-tooltip
         align="center"
       >
+        <template slot-scope="{ row }">
+          <div v-if="config.label === '消防门状态'">
+            <span
+              :style="{
+                color: row[config.prop] === '开启' ? '#09F23F' : 'red',
+              }"
+              >{{ row[config.prop] }}
+            </span>
+          </div>
+          <div
+            v-else-if="
+              config.label === '异常率' || config.label === '报警处理率'
+            "
+          >
+            <span style="color: red">{{ row[config.prop] }}</span>
+          </div>
+          <div v-else-if="config.label === '状态'">
+            <span
+              v-if="row[config.prop] === '待命'"
+              style="
+                display: inline-block;
+                width: 60px;
+                height: 22px;
+                color: #00d4f9;
+                background: #00d4f740;
+                border: 1px solid #00d4f7;
+                cursor: pointer;
+              "
+            >
+              {{ row[config.prop] }}
+            </span>
+            <span
+              v-if="row[config.prop] === '故障'"
+              style="
+                display: inline-block;
+                width: 60px;
+                height: 22px;
+                color: #ff0c00;
+                background: #ff151540;
+                border: 1px solid #ff151540;
+                cursor: pointer;
+              "
+              >{{ row[config.prop] }}</span
+            >
+            <span
+              v-if="row[config.prop] === '维保'"
+              style="
+                display: inline-block;
+                width: 60px;
+                height: 22px;
+                color: #ffff00;
+                background: #ffff0040;
+                border: 1px solid #ffff00;
+                cursor: pointer;
+              "
+              >{{ row[config.prop] }}</span
+            >
+          </div>
+          <div v-else>
+            {{ row[config.prop] }}
+          </div>
+        </template>
       </el-table-column>
     </el-table>
   </div>
@@ -69,7 +131,7 @@ export default {
     font-family: PingFangSC-Medium;
     font-weight: 500;
     font-size: 14px;
-    color: #00d6f9;
+    color: #00d4f7;
     line-height: 14px;
   }
 
@@ -85,6 +147,9 @@ export default {
 
   ::v-deep .el-table tbody tr.even-row {
     background-color: rgb(7, 96, 139, 0.3);
+    &:hover {
+      background: rgba(246, 146, 17, 0.5);
+    }
   }
 
   ::v-deep
@@ -145,7 +210,7 @@ export default {
   }
   //修改鼠标选中行
   ::v-deep .el-table tbody tr:hover > td {
-    background-color: transparent !important;
+    background-color: rgba(246, 146, 17, 0.5) !important;
   }
 }
 </style>

@@ -10,7 +10,11 @@ export default {
   },
   methods: {
     handleTableHeight() {
-      this.tableHeight = this.$refs.panelContainer.offsetHeight - 30;
+      if (this.hasSearch) {
+        this.tableHeight = this.$refs.panelContainer.offsetHeight - 30 - 32;
+      } else {
+        this.tableHeight = this.$refs.panelContainer.offsetHeight - 30;
+      }
     },
   },
 };
