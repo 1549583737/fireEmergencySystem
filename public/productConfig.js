@@ -34,6 +34,81 @@ const productConfig = {
           responser: "李四",
           matters: "值班事项3",
         },
+        {
+          troops: "一中队",
+          responser: "王二",
+          matters: "值班事项1",
+        },
+        {
+          troops: "二中队",
+          responser: "张三",
+          matters: "值班事项2",
+        },
+        {
+          troops: "三中队",
+          responser: "李四",
+          matters: "值班事项3",
+        },
+        {
+          troops: "一中队",
+          responser: "王二",
+          matters: "值班事项1",
+        },
+        {
+          troops: "二中队",
+          responser: "张三",
+          matters: "值班事项2",
+        },
+        {
+          troops: "三中队",
+          responser: "李四",
+          matters: "值班事项3",
+        },
+        {
+          troops: "一中队",
+          responser: "王二",
+          matters: "值班事项1",
+        },
+        {
+          troops: "二中队",
+          responser: "张三",
+          matters: "值班事项2",
+        },
+        {
+          troops: "三中队",
+          responser: "李四",
+          matters: "值班事项3",
+        },
+        {
+          troops: "一中队",
+          responser: "王二",
+          matters: "值班事项1",
+        },
+        {
+          troops: "二中队",
+          responser: "张三",
+          matters: "值班事项2",
+        },
+        {
+          troops: "三中队",
+          responser: "李四",
+          matters: "值班事项3",
+        },
+        {
+          troops: "一中队",
+          responser: "王二",
+          matters: "值班事项1",
+        },
+        {
+          troops: "二中队",
+          responser: "张三",
+          matters: "值班事项2",
+        },
+        {
+          troops: "三中队",
+          responser: "李四",
+          matters: "值班事项3",
+        },
       ],
     },
     // 消防车辆值守情况
@@ -118,6 +193,69 @@ const productConfig = {
           abnormalCount: "1",
           abnormalRate: "1%",
         },
+        {
+          deviceName: "热电一期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "热电二期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "气化",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "热电一期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "热电二期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "气化",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "热电一期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "热电二期",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
+        {
+          deviceName: "气化",
+          fireHydrantCount: "100",
+          normalCount: "99",
+          abnormalCount: "1",
+          abnormalRate: "1%",
+        },
       ],
     },
     // 视频报警统计
@@ -142,6 +280,60 @@ const productConfig = {
         },
       ],
       tableData: [
+        {
+          deviceName: "功能化学品事业部柠檬醛装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "电池材料公司六氟磷酸锂装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "物资装备部设备类仓",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "功能化学品事业部柠檬醛装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "电池材料公司六氟磷酸锂装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "物资装备部设备类仓",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "功能化学品事业部柠檬醛装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "电池材料公司六氟磷酸锂装置",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
+        {
+          deviceName: "物资装备部设备类仓",
+          fireAlarmCount: "0",
+          smokeAlarmCount: "0",
+          alarmDealRate: "100%",
+        },
         {
           deviceName: "功能化学品事业部柠檬醛装置",
           fireAlarmCount: "0",
@@ -305,8 +497,9 @@ const productConfig = {
   bottomMenuList: [
     {
       label: "消防联动",
-      imgUrl: "./assets/fireInteraction.png",
+      imgUrl: "./assets/fireInteraction_active.png",
       imgUrlActive: "./assets/fireInteraction_active.png",
+      // imgUrlActive: "./assets/fireInteraction_active.png",
     },
     {
       label: "应急通讯录",

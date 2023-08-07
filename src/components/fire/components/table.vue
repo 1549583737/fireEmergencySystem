@@ -4,7 +4,9 @@
       :height="tableHeight"
       :data="tableData"
       :row-class-name="tableClass"
+      ref="scrollTable"
       stripe
+      class="scrollTable"
     >
       <el-table-column
         v-for="config in tableConfig"
@@ -97,12 +99,59 @@ export default {
       type: [String, Number],
       default: 0,
     },
+    openScroll: {
+      type: Boolean,
+      default: false,
+    },
   },
   data() {
-    return {};
+    return {
+      rolltimer: null,
+    };
   },
-  mounted() {},
+  beforeDestroy() {
+    this.autoRoll("stop");
+    this.clearInterval(this.rolltimer);
+    this.rolltimer = null;
+    this.$refs.scrollTable.bodyWrapper.removeEventListener("mouseenter");
+    this.$refs.scrollTable.bodyWrapper.removeEventListener("mouseleave");
+  },
+  mounted() {
+    if (this.openScroll) {
+      this.$nextTick(() => {
+        setTimeout(() => {
+          this.autoRoll();
+        }, 100);
+      });
+
+      this.$refs.scrollTable.bodyWrapper.addEventListener("mouseenter", (e) => {
+        // 此处函数里传什么值都会暂停
+        this.autoRoll("stop");
+      });
+      // 鼠标滑出滚动
+      this.$refs.scrollTable.bodyWrapper.addEventListener("mouseleave", (e) => {
+        this.autoRoll();
+      });
+    }
+  },
   methods: {
+    autoRoll(stop) {
+      if (stop) {
+        clearInterval(this.rolltimer);
+        return;
+      }
+      // 这里的 tab 是上方 table 表格绑定的ref值
+      let table = this.$refs.scrollTable;
+      let divData = table.bodyWrapper;
+      this.rolltimer = setInterval(() => {
+        // + 4 是每秒向下滑动 4个像素  这块可以自己更改
+        divData.scrollTop += 1;
+        // 下方判断是滑动到底部就会自己回到最上方重新开始滑动  改动像素的话 一定要满足进入这个判断  否则滚动到底部就停了
+        if (divData.clientHeight + divData.scrollTop == divData.scrollHeight) {
+          divData.scrollTop = 0;
+        }
+      }, (1000 / 60) * 3);
+    },
     //偶数加背景色
     tableClass({ row, rowIndex }) {
       if (rowIndex % 2 == 1) {

@@ -12,6 +12,7 @@
       :tableConfig="data.tableConfig"
       :tableData="data.tableData"
       :hasSearch="hasSearch"
+      :openScroll="true"
     />
   </div>
 </template>

@@ -11,6 +11,7 @@
       :tableHeight="tableHeight"
       :tableConfig="data.tableConfig"
       :tableData="data.tableData"
+      :openScroll="true"
     />
   </div>
 </template>

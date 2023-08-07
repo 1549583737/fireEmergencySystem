@@ -10,11 +10,30 @@
       <div class="markIcon">
         <div class="gasIcon1 icon"></div>
         <div class="gasIcon2 icon"></div>
-        <div class="fireIcon1 icon"></div>
+        <div
+          class="fireIcon1 icon"
+          @click="dialogVisible = !dialogVisible"
+        ></div>
         <div class="fireIcon2 icon"></div>
+        <div class="dialog" v-show="dialogVisible">
+          <div class="dialog-content">
+            <div class="title">MDI装置</div>
+            <div class="accidentDesc">
+              <div class="label">事故描述:</div>
+              <div class="value">气体泄漏</div>
+            </div>
+            <div class="accidentType">
+              <div class="label">事故类型:</div>
+              <div class="value">气体</div>
+            </div>
+            <div class="accidentTime">
+              <div class="label">事故发生时间:</div>
+              <div class="value">2023-08-07 17:13:11</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!-- <div class="footer"></div> -->
   </div>
 </template>
 
@@ -36,6 +55,7 @@ export default {
   data() {
     return {
       productConfig,
+      dialogVisible: false,
     };
   },
   mounted() {
@@ -104,11 +124,60 @@ export default {
         top: 40%;
         left: 50%;
         background: url("./assets/fireIcon.png");
+        z-index: 2;
       }
       .fireIcon2 {
         top: 60%;
         left: 60%;
         background: url("./assets/fireIcon.png");
+      }
+      .dialog {
+        position: absolute;
+        width: 460px;
+        height: 250px;
+        top: calc(40% - 180px);
+        left: 42.8%;
+        background: url("./assets/dialog.png") no-repeat;
+        background-size: 70%;
+        .dialog-content {
+          padding: 30px;
+          line-height: 30px;
+          .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: #00f4fd;
+          }
+          .accidentDesc {
+            display: flex;
+            .label {
+              color: #ffffff;
+            }
+            .value {
+              color: #fd9b27;
+              margin-left: 10px;
+            }
+          }
+          .accidentType {
+            display: flex;
+            .label {
+              color: #ffffff;
+            }
+            .value {
+              color: #fd9b27;
+              margin-left: 10px;
+            }
+          }
+          .accidentTime {
+            display: flex;
+            .label {
+              color: #ffffff;
+            }
+            .value {
+              color: #fd9b27;
+              margin-left: 10px;
+            }
+          }
+        }
       }
     }
   }
